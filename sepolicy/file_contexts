@@ -39,3 +39,7 @@
 /vendor/usr/keylayout/uinput-fpc\.kl                      u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/uinput-goodix\.kl                   u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/sdm660-snd-card_Button_Jack\.kl     u:object_r:vendor_keylayout_file:s0
+
+# Persist
+/persist/PRSensorData\.txt                                    u:object_r:sensors_persist_file:s0
+
