@@ -125,7 +125,8 @@ on boot
 # Touchscreen
     chown system system /sys/class/input/input2/wake_gesture
 
-   setprop wlan.driver.status "ok"
+    # WLAN
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 #Peripheral manager
 service per_mgr /system/vendor/bin/pm-service
