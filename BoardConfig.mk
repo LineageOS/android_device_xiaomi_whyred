@@ -251,5 +251,8 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
