@@ -588,7 +588,6 @@ vendor/lib64/libthermalfeature.so
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
--vendor/lib/libtime_genoff.so
 
 # Voice fingerprint
 vendor/bin/qvop-daemon
