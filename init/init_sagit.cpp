@@ -34,9 +34,6 @@
 #include "log.h"
 #include "util.h"
 
-char const *heapminfree;
-char const *heapmaxfree;
-
 static void init_alarm_boot_properties()
 {
     int boot_reason;
