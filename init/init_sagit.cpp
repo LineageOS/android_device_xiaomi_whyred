@@ -39,6 +39,7 @@
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
+using android::init::property_set;
 
 static void init_alarm_boot_properties()
 {
