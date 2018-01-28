@@ -276,7 +276,9 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
 
-
+# VNDK-SP:
+PRODUCT_PACKAGES += \
+    vndk-sp
 
 $(call inherit-product, device/xiaomi/whyred/treble.mk)
 # Call the proprietary setup
