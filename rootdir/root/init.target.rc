@@ -424,6 +424,7 @@ on charger
     start hvdcp_opti
     setprop sys.usb.configfs 1
     start power_off_alarm
+    start thermal-engine
 
 #
 #service nqs /system/bin/nqs

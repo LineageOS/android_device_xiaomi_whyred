@@ -299,6 +299,10 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Healthd
+PRODUCT_PACKAGES += \
+    chargeonlymode
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
