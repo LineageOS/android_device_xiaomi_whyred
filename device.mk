@@ -289,6 +289,10 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
