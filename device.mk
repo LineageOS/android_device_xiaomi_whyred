@@ -274,7 +274,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java
+    android.hidl.manager@1.0-java \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8998
 
 
 
