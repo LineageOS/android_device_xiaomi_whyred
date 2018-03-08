@@ -1310,3 +1310,8 @@ service config_bt_addr /vendor/bin/btnvtool -O
     user bluetooth
     group bluetooth radio
     oneshot
+
+service goodix_script /vendor/bin/init.goodix.sh
+    class late_start
+    user root
+    oneshot
