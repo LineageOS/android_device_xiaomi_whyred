@@ -181,12 +181,12 @@ static std::vector<std::pair<Type, LightState>> notificationStates = {
 static void handleNotification(Type type, const LightState& state) {
     bool handled = false;
 
-    for(auto it : notificationStates) {
+    for (auto it : notificationStates) {
         if (it.first == type) {
             it.second = state;
         }
 
-        if  (!handled && isLit(it.second)) {
+        if (!handled && isLit(it.second)) {
             setNotification(it.second);
             handled = true;
         }
@@ -197,7 +197,7 @@ static void handleNotification(Type type, const LightState& state) {
     }
 }
 
-static std::map<Type, std::function<void(Type type, const LightState&)>> lights = {
+static std::map<Type, std::function<void(Type, const LightState&)>> lights = {
     { Type::ATTENTION, handleNotification },
     { Type::NOTIFICATIONS, handleNotification },
     { Type::BATTERY, handleNotification },
@@ -205,7 +205,7 @@ static std::map<Type, std::function<void(Type type, const LightState&)>> lights 
     { Type::BUTTONS, handleButtons },
 };
 
-} // anonymous namespace
+}  // anonymous namespace
 
 namespace android {
 namespace hardware {
