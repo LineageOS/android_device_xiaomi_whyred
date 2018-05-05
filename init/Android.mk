@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH:= $(call my-dir)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
@@ -24,7 +24,8 @@ LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_sdm660.cpp
-LOCAL_MODULE := libinit_sdm660
+LOCAL_CPPFLAGS := -Wall
+LOCAL_SRC_FILES := init_sagit.cpp
+LOCAL_MODULE := libinit_sagit
 
 include $(BUILD_STATIC_LIBRARY)
