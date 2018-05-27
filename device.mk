@@ -311,6 +311,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.sdm660
+
 # Treble makefile
 $(call inherit-product, device/xiaomi/whyred/treble.mk)
 
