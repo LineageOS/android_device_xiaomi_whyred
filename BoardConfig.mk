@@ -160,6 +160,9 @@ HOSTAPD_VERSION := VER_0_8_X
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
