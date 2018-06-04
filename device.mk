@@ -93,5 +93,17 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    copybit.sdm660 \
+    gralloc.sdm660 \
+    hwcomposer.sdm660 \
+    memtrack.sdm660 \
+    liboverlay \
+    libdisplayconfig \
+    libhwc2on1apadapter \
+    libqdMetaData.system \
+    libtinyxml
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
