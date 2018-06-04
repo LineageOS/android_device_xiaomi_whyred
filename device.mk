@@ -164,7 +164,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full \
-    telephony-ext
+    telephony-ext \
+    ims-ext-common
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
