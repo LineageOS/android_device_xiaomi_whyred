@@ -167,5 +167,8 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     ims-ext-common
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
