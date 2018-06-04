@@ -163,6 +163,11 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
+# GPS
+TARGET_NO_RPC := true
+USE_DEVICE_SPECIFIC_GPS := true
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
+
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
