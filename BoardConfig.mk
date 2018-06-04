@@ -75,6 +75,7 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
