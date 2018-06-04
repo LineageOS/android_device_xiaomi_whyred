@@ -178,6 +178,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
