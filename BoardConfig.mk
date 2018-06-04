@@ -79,5 +79,9 @@ RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 
+# Bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
