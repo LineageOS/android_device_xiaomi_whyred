@@ -186,6 +186,10 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
+# RIL
+PROTOBUF_SUPPORTED := true
+TARGET_RIL_VARIANT := caf
+
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
