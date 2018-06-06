@@ -1,0 +1,2 @@
+type ir_dev_file, file_type;
+type fp_device, file_type;
