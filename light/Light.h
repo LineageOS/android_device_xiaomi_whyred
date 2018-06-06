@@ -21,11 +21,12 @@
 #include <hardware/lights.h>
 #include <hidl/Status.h>
 #include <map>
-#include <mutex>
 #include <vector>
+#include <mutex>
 
 using ::android::hardware::Return;
 using ::android::hardware::Void;
+using ::android::hardware::hidl_vec;
 using ::android::hardware::light::V2_0::ILight;
 using ::android::hardware::light::V2_0::Flash;
 using ::android::hardware::light::V2_0::LightState;
