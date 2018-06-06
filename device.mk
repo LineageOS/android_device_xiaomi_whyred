@@ -293,6 +293,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Connectivity Engine support (CNE)
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
