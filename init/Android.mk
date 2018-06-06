@@ -23,9 +23,9 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
+LOCAL_CFLAGS := -Wall
 LOCAL_CPPFLAGS := -Wall
-LOCAL_SRC_FILES := init_sagit.cpp
-LOCAL_MODULE := libinit_sagit
+LOCAL_SRC_FILES := init_whyred.cpp
+LOCAL_MODULE := libinit_whyred
 
 include $(BUILD_STATIC_LIBRARY)
