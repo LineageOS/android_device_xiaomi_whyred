@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 $(call inherit-product, device/xiaomi/whyred/treble.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
