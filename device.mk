@@ -260,6 +260,9 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
 
 $(call inherit-product, device/xiaomi/whyred/treble.mk)
 # Call the proprietary setup
