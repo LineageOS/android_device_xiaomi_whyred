@@ -49,6 +49,54 @@
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">16000</integer>
 
+    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+         The N entries of this array define N  1 zones as follows:
+
+         Zone 0:        0 <= LUX < array[0]
+         Zone 1:        array[0] <= LUX < array[1]
+         ...
+         Zone N:        array[N - 1] <= LUX < array[N]
+         Zone N + 1     array[N] <= LUX < infinity
+
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>        <!-- pitch black -->
+        <item>5</item>        <!-- dark indoor -->
+        <item>10</item>       <!-- twilight -->
+        <item>50</item>       <!-- dim indoor -->
+        <item>100</item>      <!-- home -->
+        <item>300</item>      <!-- office -->
+        <item>500</item>      <!-- sunrise -->
+        <item>1000</item>     <!-- overcast -->
+        <item>3000</item>     <!-- indirect sun -->
+        <item>10000</item>    <!-- daylight -->
+    </integer-array>
+
+    <!-- Array of output values for LCD backlight corresponding to the LUX values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>31</item>
+        <item>48</item>
+        <item>74</item>
+        <item>107</item>
+        <item>152</item>
+        <item>194</item>
+        <item>254</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- Indicate whether to allow the device to suspend when the screen is off
+         due to the proximity sensor.  This resource should only be set to true
+         if the sensor HAL correctly handles the proximity sensor as a wake-up source.
+         Otherwise, the device may fail to wake out of suspend reliably.
+         The default is false. -->
+    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
