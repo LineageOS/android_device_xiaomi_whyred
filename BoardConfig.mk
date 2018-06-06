@@ -133,6 +133,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 #Tap to wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture"
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
