@@ -272,16 +272,9 @@ PRODUCT_PACKAGES += \
     init.crda.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sdio.sh \
-    init.qcom.syspart_fixup.sh \
     init.qcom.usb.sh \
-    init.qcom.wifi.sh \
     init.qti.fm.sh \
-    init.qti.ims.sh \
     init.goodix.sh \
     ueventd.rc
 
