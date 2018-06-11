@@ -94,3 +94,8 @@ persist.dbg.vt_avail_ovr=1
 
 #lcd density
 ro.sf.lcd_density=480
+
+#usb
+sys.usb.controller=a800000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam

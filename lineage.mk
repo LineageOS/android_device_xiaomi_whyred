@@ -28,11 +28,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.usb.controller=a800000.dwc3 \
-    sys.usb.rndis.func.name=rndis_bam \
-    sys.usb.rmnet.func.name=rmnet_bam
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_whyred
 PRODUCT_DEVICE := whyred
