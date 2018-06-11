@@ -748,7 +748,6 @@ vendor/lib64/libperfgluelayer.so
 
 vendor/Diag.cfg
 -vendor/app/CABLService/CABLService.apk
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 -vendor/app/QDMA-UI/QDMA-UI.apk
 -vendor/app/QDMA/QDMA.apk
@@ -954,7 +953,6 @@ vendor/firmware/leia_pm4_470.fw
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/voice_amodel.bin
 vendor/framework/com.fingerprints.extension.jar
-vendor/lib/android.hidl.base@1.0.so
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 vendor/lib/com.quicinc.cne.api@1.0.so
@@ -1167,7 +1165,6 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib64/android.hidl.base@1.0.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
@@ -2040,6 +2037,11 @@ vendor/lib/libchromatix_wayne_imx486_sunny_cn_i_video_weixin.so
 vendor/lib/libchromatix_wayne_imx486_sunny_cn_i_weixin_video_3a.so
 vendor/lib/libchromatix_wayne_imx486_sunny_cn_i_zsl_preview_3a.so
 vendor/lib/libchromatix_wayne_imx486_sunny_cn_i_zsl_video_3a.so
+vendor/lib/libchromatix_wayne_imx486_sunny_cn_i_zsl_video_3a.so
+vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_bokeh_preview.so
+vendor/lib/libchromatix_whyred_imx486_qtech_global_ii_bokeh_preview.so
+vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_bokeh_snapshot.so
+vendor/lib/libchromatix_whyred_s5k2l7_qtech_cn_ii_bokeh_snapshot.so
 
 
 # Camera configs
