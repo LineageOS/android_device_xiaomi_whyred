@@ -254,3 +254,6 @@ qemu.hw.mainkeys=0
 
 #low audio flinger standby delay to reduce power consumption
 ro.audio.flinger_standbytime_ms=300
+
+#Vendor security patch
+ro.lineage.build.vendor_security_patch=2018-04-01
