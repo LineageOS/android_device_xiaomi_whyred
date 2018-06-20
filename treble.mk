@@ -28,3 +28,8 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
+
+#Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.allocator@2.0-impl
