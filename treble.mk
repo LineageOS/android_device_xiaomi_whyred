@@ -83,3 +83,7 @@ PRODUCT_PACKAGES += \
 #CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.0-service
+
+#Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
