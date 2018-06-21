@@ -87,3 +87,8 @@ PRODUCT_PACKAGES += \
 #Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
+
+#Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-service \
+    android.hardware.health@1.0-impl
