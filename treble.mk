@@ -79,3 +79,7 @@ PRODUCT_PACKAGES += \
 #USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+
+#CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.0-service
