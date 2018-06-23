@@ -1,2 +1,5 @@
-allow system_server vendor_keylayout_file:file r_file_perms;
 allow system_server wcnss_filter:unix_stream_socket connectto;
+
+# Input devices
+r_dir_file(system_server, idc_file);
+r_dir_file(system_server, keylayout_file);
