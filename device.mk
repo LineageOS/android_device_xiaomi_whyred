@@ -225,6 +225,12 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+#FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

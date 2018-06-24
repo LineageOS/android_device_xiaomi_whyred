@@ -190,6 +190,10 @@ include device/qcom/sepolicy/sepolicy.mk
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 
+#FM
+BOARD_HAVE_QCOM_FM := true
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
