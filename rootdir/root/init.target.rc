@@ -119,8 +119,6 @@ on boot
 # Touchscreen
     chown system system /sys/class/input/input2/wake_gesture
 
-#Load WLAN driver
-   insmod /vendor/lib/modules/wlan.ko
    setprop wlan.driver.status "ok"
 
 #Peripheral manager
