@@ -1,2 +1,7 @@
-type ir_dev_file, file_type;
-type fp_device, file_type;
+type ir_dev_file, file_type, dev_type;
+
+# Fingerprint
+type fingerprintd_device, file_type, dev_type;
+type fingerprint_data_file, data_file_type, file_type;
+type fingerprint_persist_file, file_type;
+type sysfs_fpc_dev, sysfs_type, fs_type;

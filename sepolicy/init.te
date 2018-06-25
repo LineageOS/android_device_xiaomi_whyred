@@ -1,0 +1,1 @@
+allow init fingerprintd_device:chr_file setattr;
