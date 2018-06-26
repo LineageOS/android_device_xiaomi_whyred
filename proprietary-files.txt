@@ -2136,3 +2136,7 @@ vendor/etc/thermal-engine.conf
 #FM
 lib64/libfm-hci.so
 lib64/fm_helium.so
+
+#Ant
+-lib64/libantradio.so
+-lib/libantradio.so
