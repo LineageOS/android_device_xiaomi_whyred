@@ -22,8 +22,24 @@
 #include <string.h>
 
 
-#define BTM_DEF_LOCAL_NAME "Xiaomi Redmi Note 5 Pro"
 #define BLUETOOTH_QTI_SW TRUE
+
+static inline const char* BtmGetDefaultName()
+{
+    char product_model[PROPERTY_VALUE_MAX];
+    property_get("ro.product.model", product_model, "");
+
+    if (strstr(product_model, "Redmi Note 5 Pro"))
+        return "Redmi Note 5 Pro";
+    if (strstr(product_model, "Redmi Note 5"))
+        return "Redmi Note 5";
+
+    // Fallback to ro.product.model
+    return "";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
+
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
