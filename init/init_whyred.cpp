@@ -29,6 +29,7 @@
  */
 
 #include <cstdio>
+#include <fstream>
 
 #include <android-base/file.h>
 #include <android-base/properties.h>
@@ -75,7 +76,30 @@ static void init_alarm_boot_properties()
     }
 }
 
+static void init_setup_model_properties()
+{
+    std::ifstream fin;
+    std::string buf;
+
+    std::string product = GetProperty("ro.product.device", "");
+    if (product.find("whyred") == std::string::npos)
+        return;
+
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' '))
+        if (buf.find("androidboot.hwc") != std::string::npos)
+            break;
+    fin.close();
+
+    if (buf.find("India") != std::string::npos) {
+        property_set("ro.product.model", "Redmi Note 5 Pro");
+    } else {
+        property_set("ro.product.model", "Redmi Note 5");
+    }
+}
+
 void vendor_load_properties()
 {
     init_alarm_boot_properties();
+    init_setup_model_properties();
 }
