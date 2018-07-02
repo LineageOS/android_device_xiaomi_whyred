@@ -158,6 +158,17 @@ vendor/firmware/cpp_firmware_v1_5_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
+vendor/lib/libarcsoft_portrait_editing.so
+vendor/lib/libcamera_scene.so
+vendor/lib/libfit_face_beauty.so
+vendor/lib/libgnustl_shared.so
+lib64/libgnustl_shared.so
+vendor/lib/libSNPE.so
+lib64/libSNPE.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libsymphonypower.so
+vendor/lib/libVDClearShot.so
+vendor/lib/libVDSuperPhotoAPI.so
 
 # Camera ISP
 vendor/lib/libmmcamera_isp_abf48.so
