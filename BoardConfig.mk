@@ -187,9 +187,6 @@ TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_COMPILE := true
 
-# Power
-TARGET_POWERHAL_VARIANT := qcom
-
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
