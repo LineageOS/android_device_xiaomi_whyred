@@ -14,18 +14,47 @@
 # limitations under the License.
 #
 
-#Sensors
+# Audio
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-service \
-    android.hardware.sensors@1.0-impl
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
+    android.hardware.soundtrigger@2.0-impl
 
-#Camera
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl-qti
+
+# Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.4-impl \
     android.frameworks.displayservice@1.0
 
-#Graphics
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.0-service
+
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.0-impl
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
+# Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.allocator@2.0-impl \
@@ -36,92 +65,63 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.renderscript@1.0-impl
 
-#Audio
+# GNSS HAL
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.broadcastradio@1.0-impl \
-    android.hardware.soundtrigger@2.0-impl
+    android.hardware.gnss@1.0-impl-qti
 
-#Keymaster
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-service \
+    android.hardware.health@1.0-impl
+
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0-impl
+
+# Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl
 
-#Gatekeeper
+# Lights
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.light@2.0-service.xiaomi_sdm660
 
-# Vibrator
+# Media
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service \
-    android.hardware.vibrator@1.0-impl
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.omx@1.0-impl
 
 # Power HAL
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-service \
+    android.hardware.sensors@1.0-impl
+
+# Tether
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.control@1.0
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     android.hardware.thermal@1.0-impl
 
-#GNSS HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti
-
-#USB HAL
+# USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-#CAS
+# Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.cas@1.0-service
+    android.hardware.vibrator@1.0-service \
+    android.hardware.vibrator@1.0-impl
 
-#Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
-
-#Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-service \
-    android.hardware.health@1.0-impl
-
-#IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service \
-    android.hardware.ir@1.0-impl
-
-#Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    android.hardware.media.omx@1.0-impl
-
-#Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl-qti
-
-#Wi-Fi
+# Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     vendor.qti.hardware.wifi.supplicant@1.0 \
     vendor.qti.hardware.wifi.supplicant@1.0_vendor
-
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.0-impl
-
-#Tether
-PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.control@1.0
-
-#Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
-
-#Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sdm660
