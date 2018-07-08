@@ -286,9 +286,6 @@ on mmi && property:ro.bootmode=ffbm-00
     # Create vpp directory
     mkdir /persist/vpp 0770 media media
 
-    # load WIGIG platform driver
-    insmod /vendor/lib/modules/msm_11ad_proxy.ko
-
     setprop sys.usb.configfs 0
 
     #Config USB for FFBM
