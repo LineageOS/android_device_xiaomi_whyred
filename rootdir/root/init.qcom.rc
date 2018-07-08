@@ -56,7 +56,6 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
-    insmod /vendor/lib/modules/exfat.ko
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -217,9 +216,6 @@ on boot
 
     # Create vpp directory
     mkdir /persist/vpp 0770 media media
-
-    # load WIGIG platform driver
-    insmod /vendor/lib/modules/msm_11ad_proxy.ko
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -771,26 +767,6 @@ on property:netd.fstman.start=true
 on property:netd.fstman.start=false
     stop fstman
 
-service wigighalsvc /vendor/bin/wigighalsvc
-    class main
-    user system
-    group wifi
-    disabled
-
-service wigignpt /vendor/bin/wigignpt
-    class main
-    socket wigignpt stream 660 system wifi
-    user system
-    group wifi net_admin
-    disabled
-
-on property:persist.vendor.wigig.enable=1
-    insmod /vendor/lib/modules/wil6210.ko alt_ifname=1
-    start wigighalsvc
-
-on property:persist.vendor.wigig.npt.enable=1
-    start wigignpt
-
 service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
     class late_start
     disabled
@@ -918,10 +894,6 @@ service loc_launcher /system/vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet diag wifi
-
-on property:crypto.driver.load=1
-     insmod /system/lib/modules/qce.ko
-     insmod /system/lib/modules/qcedev.ko
 
 service drmdiag /system/vendor/bin/drmdiagapp
     class late_start
