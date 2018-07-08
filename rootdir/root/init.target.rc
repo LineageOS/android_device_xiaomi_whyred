@@ -122,10 +122,8 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
-# Touchscreen
+    # Touchscreen
     chown system system /sys/class/input/input2/wake_gesture
-
-   setprop wlan.driver.status "ok"
 
 #Peripheral manager
 service per_mgr /system/vendor/bin/pm-service
