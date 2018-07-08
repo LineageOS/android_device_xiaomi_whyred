@@ -400,7 +400,7 @@ service ppd /vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
 
 on property:sys.boot_completed=1
-    setprop sys.io.scheduler "bfq"
+    setprop sys.io.scheduler "maple"
 
 on charger
     load_system_props
