@@ -1313,5 +1313,5 @@ service config_bt_addr /vendor/bin/btnvtool -O
 
 service goodix_script /vendor/bin/init.goodix.sh
     class late_start
-    user root
+    user system
     oneshot

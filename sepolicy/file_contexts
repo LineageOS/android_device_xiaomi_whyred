@@ -27,6 +27,9 @@
 /sys/devices/soc/soc:fpc1020.*/hw_reset                       u:object_r:sysfs_fpc_dev:s0
 /sys/devices/soc/soc:fpc1020.*/wakeup_enable                  u:object_r:sysfs_fpc_dev:s0
 
+# Shell Script
+/(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
+
 # Video4linux sysfs nodes
 /sys/devices/soc/ca00000\.qcom,msm-cam/video4linux/video0(/.*)? u:object_r:sysfs_graphics:s0
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
