@@ -129,13 +129,13 @@ on boot
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 #Peripheral manager
-service per_mgr /system/vendor/bin/pm-service
+service per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
     ioprio rt 4
 
-service per_proxy /system/vendor/bin/pm-proxy
+service per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
@@ -184,7 +184,7 @@ service qseecomd /vendor/bin/qseecomd
    user root
    group root
 
-#service mpdecision /system/vendor/bin/mpdecision --avg_comp
+#service mpdecision /vendor/bin/mpdecision --avg_comp
 #   user root
 #   disabled
 #
@@ -193,7 +193,7 @@ service qseecomd /vendor/bin/qseecomd
 #   group systemcu
 #   disabled
 #
-service thermal-engine /system/vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine
    class main
    user root
    socket thermal-send-client stream 0666 system system
@@ -210,7 +210,7 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #    class core
 #    oneshot
 #
-service time_daemon /system/vendor/bin/time_daemon
+service time_daemon /vendor/bin/time_daemon
    class late_start
    user root
    group root
@@ -220,60 +220,60 @@ service adsprpcd_root /system/bin/adsprpcd
    user media
    group media
 
-service adsprpcd /system/vendor/bin/adsprpcd audiopd
+service adsprpcd /vendor/bin/adsprpcd audiopd
    class main
    user media
    group media
 
-service hbtp /system/vendor/bin/hbtp_daemon
+service hbtp /vendor/bin/hbtp_daemon
     class main
     user system
     group system
     disabled
 
-service audiod /system/vendor/bin/audiod
+service audiod /vendor/bin/audiod
    class late_start
    user system
    group system
 #
-#service usf_tester /system/vendor/bin/usf_tester
+#service usf_tester /vendor/bin/usf_tester
 #    user system
 #    group system inet
 #    disabled
 #
-#service usf_epos /system/vendor/bin/usf_epos
+#service usf_epos /vendor/bin/usf_epos
 #    user system
 #    group system inet
 #    disabled
 #
-#service usf_gesture /system/vendor/bin/usf_gesture
-#    user system
-#    group system inet
-#    disabled
-#
-
-#service usf_sync_gesture /system/vendor/bin/usf_sync_gesture
+#service usf_gesture /vendor/bin/usf_gesture
 #    user system
 #    group system inet
 #    disabled
 #
 
-#service usf_p2p /system/vendor/bin/usf_p2p
+#service usf_sync_gesture /vendor/bin/usf_sync_gesture
 #    user system
 #    group system inet
 #    disabled
 #
-#service usf_hovering /system/vendor/bin/usf_hovering
+
+#service usf_p2p /vendor/bin/usf_p2p
 #    user system
 #    group system inet
 #    disabled
 #
-#service usf_proximity /system/vendor/bin/usf_proximity
+#service usf_hovering /vendor/bin/usf_hovering
 #    user system
 #    group system inet
 #    disabled
 #
-#service usf-post-boot /system/vendor/bin/sh /system/etc/usf_post_boot.sh
+#service usf_proximity /vendor/bin/usf_proximity
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf-post-boot /vendor/bin/sh /system/etc/usf_post_boot.sh
 #    class late_start
 #    user root
 #    disabled
@@ -297,13 +297,13 @@ service audiod /system/vendor/bin/audiod
 #    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
 #
 #
-service imsqmidaemon /system/vendor/bin/imsqmidaemon
+service imsqmidaemon /vendor/bin/imsqmidaemon
     class main
     user system
     socket ims_qmid stream 0660 system radio
     group radio log diag
 
-service imsdatadaemon /system/vendor/bin/imsdatadaemon
+service imsdatadaemon /vendor/bin/imsdatadaemon
     class main
     user system
     socket ims_datad stream 0660 system radio
@@ -347,32 +347,32 @@ service imsdatadaemon /system/vendor/bin/imsdatadaemon
 #    start mdm_helper_proxy
 #
 ## QCA1530 SoC core detect
-#service gnss-detect /system/vendor/bin/gnss.qca1530.sh detect
+#service gnss-detect /vendor/bin/gnss.qca1530.sh detect
 #   class core
 #   oneshot
 
-service energy-awareness /system/vendor/bin/energy-awareness
+service energy-awareness /vendor/bin/energy-awareness
     class main
     user system
     group system
     oneshot
 
-service mdtpd /system/vendor/bin/mdtpd
+service mdtpd /vendor/bin/mdtpd
     class late_start
     user root
     group system radio drmrpc
 
-service pd_mapper /system/vendor/bin/pd-mapper
+service pd_mapper /vendor/bin/pd-mapper
      class core
 
 #
 ## QCA1530 SoC late_start group trigger
-#service gnss-init /system/vendor/bin/gnss.qca1530.sh init
+#service gnss-init /vendor/bin/gnss.qca1530.sh init
 #   class late_start
 #   oneshot
 #
 ## QCA1530 SoC Service Daemon
-#service gnss-svcd /system/vendor/bin/gnss.qca1530.sh start
+#service gnss-svcd /vendor/bin/gnss.qca1530.sh start
 #   class late_start
 #   user root
 #   group gps system qcom_diag diag log inet net_raw
@@ -381,13 +381,13 @@ service pd_mapper /system/vendor/bin/pd-mapper
 on property:vendor.ims.QMI_DAEMON_STATUS=1
     start imsdatadaemon
 
-service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
+service ims_rtp_daemon /vendor/bin/ims_rtp_daemon
    class main
    user system
    group radio diag inet log
    disabled
 
-service vendor.imsrcsservice /system/vendor/bin/imsrcsd
+service vendor.imsrcsservice /vendor/bin/imsrcsd
    class main
    user system
    group radio diag inet log
@@ -400,7 +400,7 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
     setprop persist.rcs.supported 0
 # add for HMI_L8866_A01-502: end
 
-service ppd /system/vendor/bin/mm-pp-dpps
+service ppd /vendor/bin/mm-pp-dpps
     class hal
     user system
     group system graphics
@@ -424,7 +424,7 @@ on charger
 #    user system
 #    group drmrpc
 #
-#service adsprpcd /system/vendor/bin/adsprpcd
+#service adsprpcd /vendor/bin/adsprpcd
 #   class main
 #   user media
 #   group media
@@ -452,7 +452,7 @@ service tlocd /system/bin/tloc_daemon
     user system
     group drmrpc
 
-service hvdcp_opti /system/vendor/bin/hvdcp_opti
+service hvdcp_opti /vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
@@ -463,14 +463,14 @@ service smcinvoked /system/bin/smcinvoked
    group system
 
 # smart pa cal     tsx 08/26
-service pa-cal-load /system/vendor/bin/smart-pa-cal -load
+service pa-cal-load /vendor/bin/smart-pa-cal -load
     user root
     group root
     disabled
     oneshot
 
 # smart pa cal     tsx 08/26
-service smart-pa-cal /system/vendor/bin/smart-pa-cal -t 25 -c /system/vendor/etc/speaker.ftcfg -v -u
+service smart-pa-cal /vendor/bin/smart-pa-cal -t 25 -c /vendor/etc/speaker.ftcfg -v -u
     user root
     group root
     disabled
@@ -483,61 +483,61 @@ on property:sys.pa-cal=1
     start smart-pa-cal
 
 # audio loopback test begin    tsx 08/26
-service loopback_spk1 /system/vendor/bin/loopback.sh 1 1
+service loopback_spk1 /vendor/bin/loopback.sh 1 1
     user root
     group root
     disabled
     oneshot
 
-service loopback_spk0 /system/vendor/bin/loopback.sh 1 0
+service loopback_spk0 /vendor/bin/loopback.sh 1 0
     user root
     group root
     disabled
     oneshot
 
-service loopback_rec1 /system/vendor/bin/loopback.sh 2 1
+service loopback_rec1 /vendor/bin/loopback.sh 2 1
     user root
     group root
     disabled
     oneshot
 
-service loopback_rec0 /system/vendor/bin/loopback.sh 2 0
+service loopback_rec0 /vendor/bin/loopback.sh 2 0
     user root
     group root
     disabled
     oneshot
 
-service loopback_hand1 /system/vendor/bin/loopback.sh 3 1
+service loopback_hand1 /vendor/bin/loopback.sh 3 1
     user root
     group root
     disabled
     oneshot
 
-service loopback_hand0 /system/vendor/bin/loopback.sh 3 0
+service loopback_hand0 /vendor/bin/loopback.sh 3 0
     user root
     group root
     disabled
     oneshot
 
-service loopback_sec1 /system/vendor/bin/loopback.sh 4 1
+service loopback_sec1 /vendor/bin/loopback.sh 4 1
     user root
     group root
     disabled
     oneshot
 
-service loopback_sec0 /system/vendor/bin/loopback.sh 4 0
+service loopback_sec0 /vendor/bin/loopback.sh 4 0
     user root
     group root
     disabled
     oneshot
 
-service spk_playback1 /system/vendor/bin/loopback.sh 5 1
+service spk_playback1 /vendor/bin/loopback.sh 5 1
     user root
     group root
     disabled
     oneshot
 
-service spk_playback0 /system/vendor/bin/loopback.sh 5 0
+service spk_playback0 /vendor/bin/loopback.sh 5 0
     user root
     group root
     disabled
@@ -573,13 +573,13 @@ on property:sys.spk-playback=1
 on property:sys.spk-playback=0
     start spk_playback0
 
-service tinyhostless_spk /system/vendor/bin/tinyhostless -D 0 -P 35 -C 11 -p 8 -n 2 -c 1 -r 48000
+service tinyhostless_spk /vendor/bin/tinyhostless -D 0 -P 35 -C 11 -p 8 -n 2 -c 1 -r 48000
     user root
     group root
     disabled
     oneshot
 
-service tinyhostless /system/vendor/bin/tinyhostless -D 0 -P 5 -C 11 -p 8 -n 2 -c 1 -r 48000
+service tinyhostless /vendor/bin/tinyhostless -D 0 -P 5 -C 11 -p 8 -n 2 -c 1 -r 48000
     user root
     group root
     disabled
