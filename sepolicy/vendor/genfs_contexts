@@ -1,0 +1,2 @@
+# Power
+genfscon debugfs /wlan0   u:object_r:debugfs_wlan:s0
