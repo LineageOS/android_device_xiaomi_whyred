@@ -15,3 +15,6 @@ type keylayout_file, file_type, vendor_file_type;
 
 # Power
 type debugfs_wlan, debugfs_type, fs_type;
+
+# CNSS
+type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;

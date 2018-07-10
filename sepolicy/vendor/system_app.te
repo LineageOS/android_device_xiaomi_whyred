@@ -1,3 +1,4 @@
 add_service(system_app, goodix_fingerprint_service)
 allow system_app camera_prop:property_service set;
 get_prop(system_app, camera_prop);
+get_prop(system_app, qemu_hw_mainkeys_prop)
