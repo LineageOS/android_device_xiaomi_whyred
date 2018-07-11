@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "103166e0_dc10446d",
+        "filename": "rootdir/root/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1316,
+      "author": {
+        "id": 13559
+      },
+      "writtenOn": "2018-07-11T17:28:02Z",
+      "side": 1,
+      "message": "user system else you will get dac_override denial",
+      "range": {
+        "startLine": 1316,
+        "startChar": 9,
+        "endLine": 1316,
+        "endChar": 13
+      },
+      "revId": "082ef7ed93985259d494022c055e0f4403ee4390",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
