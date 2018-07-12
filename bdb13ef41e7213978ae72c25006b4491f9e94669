@@ -16,6 +16,24 @@
       "revId": "bdb13ef41e7213978ae72c25006b4491f9e94669",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "57427162_d8ca3fc0",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 14151
+      },
+      "writtenOn": "2018-07-12T17:55:59Z",
+      "side": 1,
+      "message": "yes.. check if it works with vendor. if not then its fine.",
+      "parentUuid": "1e3426b7_301beb20",
+      "revId": "bdb13ef41e7213978ae72c25006b4491f9e94669",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
