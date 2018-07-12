@@ -98,7 +98,6 @@ on post-fs-data
     mkdir /persist/qti_fp 0700 system system
     mkdir /data/misc/seemp 0700 system system
     mkdir /data/misc/tloc 0700 system drmrpc
-    start pa-cal-load
 
 on boot
     start rmt_storage
@@ -218,7 +217,7 @@ service time_daemon /vendor/bin/time_daemon
    user root
    group root
 
-service adsprpcd_root /system/bin/adsprpcd
+service adsprpcd_root /vendor/bin/adsprpcd
    class main
    user media
    group media
@@ -234,10 +233,6 @@ service hbtp /vendor/bin/hbtp_daemon
     group system
     disabled
 
-service audiod /vendor/bin/audiod
-   class late_start
-   user system
-   group system
 #
 #service usf_tester /vendor/bin/usf_tester
 #    user system
@@ -360,11 +355,6 @@ service energy-awareness /vendor/bin/energy-awareness
     group system
     oneshot
 
-service mdtpd /vendor/bin/mdtpd
-    class late_start
-    user root
-    group system radio drmrpc
-
 service pd_mapper /vendor/bin/pd-mapper
      class core
 
@@ -439,51 +429,15 @@ on charger
 #    user system
 #    group system
 
-service seempd /system/bin/seempd
-    class late_start
-    user system
-    group system sdcard_rw
-    socket seempdw dgram 0666 system system
-
 service qfp-daemon /vendor/bin/qfp-daemon
     class late_start
     user system
     group system drmrpc diag input
 
-service tlocd /system/bin/tloc_daemon
-    class late_start
-    user system
-    group drmrpc
-
 service hvdcp_opti /vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
-
-service smcinvoked /system/bin/smcinvoked
-   class main
-   user system
-   group system
-
-# smart pa cal     tsx 08/26
-service pa-cal-load /vendor/bin/smart-pa-cal -load
-    user root
-    group root
-    disabled
-    oneshot
-
-# smart pa cal     tsx 08/26
-service smart-pa-cal /vendor/bin/smart-pa-cal -t 25 -c /vendor/etc/speaker.ftcfg -v -u
-    user root
-    group root
-    disabled
-    oneshot
-
-on property:sys.pa-cal=0
-    stop smart-pa-cal
-
-on property:sys.pa-cal=1
-    start smart-pa-cal
 
 # audio loopback test begin    tsx 08/26
 service loopback_spk1 /vendor/bin/loopback.sh 1 1
