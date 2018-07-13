@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "caafdc32_09b568b9",
+        "filename": "init/init_whyred.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 18568
+      },
+      "writtenOn": "2018-07-13T09:41:43Z",
+      "side": 1,
+      "message": "GetProperty",
+      "range": {
+        "startLine": 83,
+        "startChar": 26,
+        "endLine": 83,
+        "endChar": 38
+      },
+      "revId": "51c3d2f3d945be96a166739bad67a5ece7b38ead",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f95a49e2_dd902366",
+        "filename": "init/init_whyred.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 18568
+      },
+      "writtenOn": "2018-07-13T09:41:43Z",
+      "side": 1,
+      "message": "u sure it is also this cmdline?",
+      "range": {
+        "startLine": 89,
+        "startChar": 22,
+        "endLine": 89,
+        "endChar": 36
+      },
+      "revId": "51c3d2f3d945be96a166739bad67a5ece7b38ead",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
