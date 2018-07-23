@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8cc77728_5a3076de",
+        "filename": "configs/privapp-permissions-qti.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-23T14:29:32Z",
+      "side": 1,
+      "message": "This is all unused crap.",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 23
+      },
+      "revId": "6d3cdb02a81ce447ae0aabba232605a03a29f4be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
