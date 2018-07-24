@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca866c5b_6aefa285",
+        "filename": "treble.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-24T09:59:53Z",
+      "side": 1,
+      "message": "remove that too",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 28
+      },
+      "revId": "7e2db45ce6950d7c59f07e95103955cb58ca72a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53761933_43a23e82",
+        "filename": "treble.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-24T09:59:53Z",
+      "side": 1,
+      "message": "remove that too",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 28
+      },
+      "revId": "7e2db45ce6950d7c59f07e95103955cb58ca72a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
