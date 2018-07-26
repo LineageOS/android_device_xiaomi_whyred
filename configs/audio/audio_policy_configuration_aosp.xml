@@ -51,9 +51,11 @@
             <attachedDevices>
                 <item>Earpiece</item>
                 <item>Speaker</item>
-                <item>FM Tuner</item>
+                <item>Telephony Tx</item>
                 <item>Built-In Mic</item>
                 <item>Built-In Back Mic</item>
+                <item>FM Tuner</item>
+                <item>Telephony Rx</item>
             </attachedDevices>
             <defaultOutputDevice>Speaker</defaultOutputDevice>
             <mixPorts>
@@ -199,7 +201,7 @@
                 <route type="mix" sink="Telephony Tx"
                        sources="voice_tx"/>
                 <route type="mix" sink="primary input"
-                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,FM Tuner"/>
+                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,FM Tuner,Telephony Rx"/>
                 <route type="mix" sink="voice_rx"
                        sources="Telephony Rx"/>
             </routes>
