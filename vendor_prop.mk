@@ -56,6 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_shutter_sound.packagelist=com.android.camera \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,org.lineageos.snap \
     persist.camera.preview.ubwc=0 \
     persist.camera.stats.test=0 \
