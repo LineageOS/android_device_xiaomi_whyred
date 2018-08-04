@@ -184,8 +184,9 @@ LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := init.goodix.sh
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
-include $(CLEAR_VARS)
+include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
 LOCAL_MODULE          := chargeonlymode
 LOCAL_MODULE_OWNER    := xiaomi
 LOCAL_MODULE_PATH     := $(TARGET_ROOT_OUT_SBIN)
