@@ -914,7 +914,6 @@ vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/listen_platform_info.xml
-vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/pa_ca_28db.wav
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/permissions/com.fingerprints.extension.xml
