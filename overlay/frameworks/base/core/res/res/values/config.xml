@@ -463,4 +463,8 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+     
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option --> 
+    <bool name="config_intrusiveNotificationLed">true</bool>
+     
 </resources>
