@@ -108,6 +108,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti
 
+# VR
+PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service
+
 #Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
