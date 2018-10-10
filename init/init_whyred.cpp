@@ -37,10 +37,13 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+#include "util.h"
+
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
 using android::init::property_set;
+using android::init::import_kernel_cmdline;
 
 static void init_alarm_boot_properties()
 {
@@ -75,7 +78,22 @@ static void init_alarm_boot_properties()
     }
 }
 
+static void init_setup_model_properties(const std::string& key,
+        const std::string& value, bool for_emulator __attribute__((unused)))
+{
+    if (key.empty()) return;
+
+    if (key == "androidboot.hwc") {
+        if (value.find("India") != std::string::npos) {
+            property_set("ro.product.model", "Redmi Note 5 Pro");
+        } else {
+            property_set("ro.product.model", "Redmi Note 5");
+        }
+    }
+}
+
 void vendor_load_properties()
 {
     init_alarm_boot_properties();
+    import_kernel_cmdline(0, init_setup_model_properties);
 }

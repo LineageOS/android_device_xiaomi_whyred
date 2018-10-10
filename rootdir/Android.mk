@@ -27,14 +27,6 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.sensors.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.sensors.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.sh
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := EXECUTABLES
@@ -91,58 +83,10 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.class_core.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.class_core.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.coex.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.coex.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.crashdata.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.crashdata.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.early_boot.sh
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := root/init.qcom.early_boot.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.efs.sync.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.efs.sync.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.sdio.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.sdio.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.syspart_fixup.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.syspart_fixup.sh
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -155,26 +99,10 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.wifi.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.wifi.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.fm.sh
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := root/init.qcom.fm.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.ims.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.ims.sh
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 

@@ -1,0 +1,22 @@
+# Policy for /vendor/bin/cnss_diag
+type cnss_diag, domain;
+type cnss_diag_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(cnss_diag)
+
+allow cnss_diag self:capability { setgid setuid };
+
+allow cnss_diag self:netlink_socket create_socket_perms_no_ioctl;
+allow cnss_diag sysfs:file r_file_perms;
+
+# b/35877764 suppress the udp_socket denial message temproarily
+dontaudit cnss_diag self:udp_socket create;
+
+userdebug_or_eng(`
+  allow cnss_diag diag_device:chr_file rw_file_perms;
+  allow cnss_diag cnss_vendor_data_file:dir create_dir_perms;
+  allow cnss_diag cnss_vendor_data_file:file create_file_perms;
+')
+userbuild(`
+  dontaudit cnss_diag diag_device:chr_file rw_file_perms;
+')

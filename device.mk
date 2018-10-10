@@ -23,8 +23,16 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Properties
 -include device/xiaomi/whyred/vendor_prop.mk
+
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -55,9 +63,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vr.high_performance.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+    frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
@@ -75,6 +85,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
+
+# Apps
+PRODUCT_PACKAGES += \
+    Jelly \
+    Eleven
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -240,6 +255,10 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 #FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -252,23 +271,15 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.class_main.sh \
     init.qcom.sh \
-    init.qcom.sensors.sh \
     init.qcom.usb.rc \
     init.msm.usb.configfs.rc \
     init.target.rc \
     init.crda.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sdio.sh \
-    init.qcom.syspart_fixup.sh \
     init.qcom.usb.sh \
-    init.qcom.wifi.sh \
     init.qti.fm.sh \
-    init.qti.ims.sh \
     init.goodix.sh \
     ueventd.rc
 
@@ -284,8 +295,7 @@ PRODUCT_PACKAGES += \
     rcs_service_api.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -326,9 +336,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
+# VR
+PRODUCT_PACKAGES += \
+    vr.sdm660
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
+
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.sdm660
 
 $(call inherit-product, device/xiaomi/whyred/treble.mk)
 # Call the proprietary setup

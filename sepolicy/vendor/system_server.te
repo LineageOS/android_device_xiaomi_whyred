@@ -1,0 +1,6 @@
+get_prop(system_server, qemu_hw_mainkeys_prop)
+allow system_server wcnss_filter:unix_stream_socket connectto;
+
+# Input devices
+r_dir_file(system_server, idc_file);
+r_dir_file(system_server, keylayout_file);

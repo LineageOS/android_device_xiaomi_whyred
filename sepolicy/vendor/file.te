@@ -1,0 +1,20 @@
+type ir_dev_file, file_type, dev_type;
+
+# Touchscreen wake_gesture
+type sysfs_tap_to_wake, sysfs_type, fs_type;
+
+# Fingerprint
+type fingerprintd_device, file_type, dev_type;
+type fingerprint_data_file, data_file_type, file_type;
+type fingerprint_persist_file, file_type;
+type sysfs_fpc_dev, sysfs_type, fs_type;
+
+# Input devices
+type idc_file, file_type, vendor_file_type;
+type keylayout_file, file_type, vendor_file_type;
+
+# Power
+type debugfs_wlan, debugfs_type, fs_type;
+
+# CNSS
+type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;

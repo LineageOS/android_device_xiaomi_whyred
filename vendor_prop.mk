@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,org.cyanogenmod.snap \
+    camera.disable_shutter_sound.packagelist=com.android.camera \
+    vendor.camera.aux.packagelist=com.android.camera \
     persist.camera.preview.ubwc=0 \
     persist.camera.stats.test=0 \
     persist.camera.depth.focus.cb=0 \
@@ -130,20 +131,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.overlay.izat.optin=rro
-
-# HWUI
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=88 \
-    ro.hwui.layer_cache_size=58 \
-    ro.hwui.path_cache_size=32 \
-    ro.hwui.gradient_cache_size=1 \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.text_small_cache_width=1024 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=2048
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -226,18 +213,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     ro.telephony.default_network=22,20 \
     ro.use_data_netmgrd=true \
-    rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
     persist.vendor.radio.snapshot_enabled=1 \
     persist.vendor.radio.snapshot_timer=5 \
     persist.radio.sw_mbn_update=0
     persist.radio.hw_mbn_update=0
-    persist.radio.trigger.silence=true
+    persist.radio.trigger.silence=true \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_con_rprt=1 \
+    persist.radio.calls.on.ims=1
 
 # Security Patch Level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2018-05-01
+    ro.vendor.build.security_patch=2018-07-01
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \

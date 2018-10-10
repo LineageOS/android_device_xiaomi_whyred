@@ -1,0 +1,26 @@
+[
+  {
+    "repository" : "dotOS-Devices/proprietary_vendor_xiaomi_whyred",
+    "target_path": "vendor/xiaomi/whyred"
+    "branch": "dot-o",
+    "remote": "github"
+  },
+  {
+    "repository" : "AOSiP-Devices/kernel_xiaomi_whyred",
+    "target_path": "kernel/xiaomi/whyred"
+    "branch": "oreo-mr1",
+    "remote": github"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-15.1",
+    "remote": "github"
+  },
+  {
+    "repository": "jhenrique09/vendor_xiaomi_MiuiCamera",
+    "target_path": "vendor/xiaomi/MiuiCamera",
+    "branch": "master",
+    "remote": "github"
+  }
+]

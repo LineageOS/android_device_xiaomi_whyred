@@ -1,0 +1,2 @@
+allow rild vendor_file:file ioctl;
+allow rild diag_device:chr_file rw_file_perms;

@@ -81,7 +81,7 @@ start_vm_bms()
 
 start_msm_irqbalance_8939()
 {
-	if [ -f /system/vendor/bin/msm_irqbalance ]; then
+	if [ -f /vendor/bin/msm_irqbalance ]; then
 		case "$platformid" in
 		    "239" | "293" | "294" | "295" | "304" | "313")
 			start vendor.msm_irqbalance;;
@@ -91,7 +91,7 @@ start_msm_irqbalance_8939()
 
 start_msm_irqbalance_8952()
 {
-        if [ -f /system/vendor/bin/msm_irqbalance ]; then
+        if [ -f /vendor/bin/msm_irqbalance ]; then
                 case "$platformid" in
                      "241" | "263" | "264" | "268" | "269" | "270" | "271")
                         start vendor.msm_irqbalance;;
@@ -120,14 +120,6 @@ start_msm_irqbalance()
 	if [ -f /vendor/bin/msm_irqbalance ]; then
 		start vendor.msm_irqbalance
 	fi
-}
-
-start_copying_prebuilt_qcril_db()
-{
-    if [ -f /vendor/radio/qcril_database/qcril.db -a ! -f /data/vendor/radio/qcril.db ]; then
-        cp /vendor/radio/qcril_database/qcril.db /data/vendor/radio/qcril.db
-        chown -h radio.radio /data/vendor/radio/qcril.db
-    fi
 }
 
 baseband=`getprop ro.baseband`
@@ -425,12 +417,6 @@ case "$target" in
        esac
         ;;
 esac
-
-#
-# Copy qcril.db if needed for RIL
-#
-start_copying_prebuilt_qcril_db
-echo 1 > /data/vendor/radio/db_check_done
 
 #
 # Make modem config folder and copy firmware config to that folder for RIL
