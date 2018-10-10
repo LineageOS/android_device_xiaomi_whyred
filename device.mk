@@ -290,8 +290,7 @@ PRODUCT_PACKAGES += \
     rcs_service_api.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # IPv6
 PRODUCT_PACKAGES += \
