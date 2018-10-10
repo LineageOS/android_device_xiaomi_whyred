@@ -86,6 +86,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+# Apps
+PRODUCT_PACKAGES += \
+    Jelly \
+    Eleven
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
