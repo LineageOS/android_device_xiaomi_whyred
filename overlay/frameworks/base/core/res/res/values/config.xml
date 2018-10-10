@@ -469,4 +469,9 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- Time to give to the proximity sensor before toggling the flashlight with the Power button.
+    Set to -1 to disable the proximity sensor check at all-->
+    <integer name="config_flashlightProximityTimeout">400</integer>
+
 </resources>
