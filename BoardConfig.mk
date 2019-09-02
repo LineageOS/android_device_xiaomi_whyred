@@ -27,6 +27,9 @@
 
 DEVICE_PATH := device/xiaomi/tulip
 
+# Kernel
+TARGET_KERNEL_CONFIG := tulip_defconfig
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
