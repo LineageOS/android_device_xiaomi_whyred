@@ -36,11 +36,38 @@
          Example for a 10dp x 10dp square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
-         -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -270,0 L -270,89 L 270,89 L 270,0 Z</string>
+    -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M 276.86,88
+        H -276.87
+        V 0
+        H 276.86
+        Z
+    </string>
+
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M-303,0
+        L303,0
+        C297.996921,0 293.7782,0.963094935 290.461489,2.86688725
+        C287.195202,4.73708323 284.618028,7.69916009 282.998891,11.4451514
+        C282.001636,13.7688979 281.301317,16.4846017 280.925946,19.5138712
+        L279.710193,29.4583864
+        C277.878158,44.3359633 273.46895,56.5314329 266.605824,65.7032324
+        C259.63625,75.0150165 250.375232,81.2583355 238.301733,84.7859506
+        C231.018416,86.9193179 222.676217,88 213.50484,88
+        L-213.50484,88
+        C-228.497268,88 -241.14783,85.1107152 -251.097961,79.4161364
+        C-261.188157,73.6431662 -268.516295,65.2216849 -273.496963,53.6701451
+        C-276.499931,46.704505 -278.589682,38.5573937 -279.710193,29.4583864
+        L-280.925946,19.5138712
+        C-281.542227,14.5584118 -283.010096,10.4932553 -285.301539,7.43038941
+        C-287.553765,4.41791805 -290.81445,2.21735811 -294.730634,1.06948333
+        C-297.156539,0.363960295 -299.941007,0 -303,0
+        Z
+    </string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">89.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
-    <dimen name="rounded_corner_radius_top">104px</dimen>
+    <dimen name="status_bar_height_portrait">88px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="rounded_corner_radius_top">96px</dimen>
 </resources>
