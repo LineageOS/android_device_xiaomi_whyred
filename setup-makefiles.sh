@@ -19,7 +19,7 @@ set -e
 
 export DEVICE=twolip
 export VENDOR=xiaomi
-export INITIAL_COPYRIGHT_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2019
 export DEVICE_COMMON=sdm660-common
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
