@@ -26,6 +26,9 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/twolip
 
+# Inherit properties.mk
+$(call inherit-product, $(DEVICE_PATH)/properties.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
