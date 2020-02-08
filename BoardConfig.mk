@@ -33,6 +33,9 @@ TARGET_OTA_ASSERT_DEVICE := tulip,twolip
 # Kernel
 TARGET_KERNEL_CONFIG := tulip_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 

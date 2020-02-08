@@ -46,5 +46,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/twolip/twolip-vendor.mk)
