@@ -624,7 +624,6 @@ vendor/bin/qfp-daemon
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
