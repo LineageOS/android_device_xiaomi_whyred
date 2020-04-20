@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 # FM
 BOARD_HAVE_QCOM_FM := true
 
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
