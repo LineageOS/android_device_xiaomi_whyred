@@ -669,15 +669,15 @@ vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_tianma_td4310_fhd_video_mode_dsi_panel.xml
 
 # Fingerprint firmware
-etc/firmware/goodixfp.b00
-etc/firmware/goodixfp.b01
-etc/firmware/goodixfp.b02
-etc/firmware/goodixfp.b03
-etc/firmware/goodixfp.b04
-etc/firmware/goodixfp.b05
-etc/firmware/goodixfp.b06
-etc/firmware/goodixfp.b07
-etc/firmware/goodixfp.mdt
+etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
+etc/firmware/goodixfp.b01:vendor/firmware/goodixfp.b01
+etc/firmware/goodixfp.b02:vendor/firmware/goodixfp.b02
+etc/firmware/goodixfp.b03:vendor/firmware/goodixfp.b03
+etc/firmware/goodixfp.b04:vendor/firmware/goodixfp.b04
+etc/firmware/goodixfp.b05:vendor/firmware/goodixfp.b05
+etc/firmware/goodixfp.b06:vendor/firmware/goodixfp.b06
+etc/firmware/goodixfp.b07:vendor/firmware/goodixfp.b07
+etc/firmware/goodixfp.mdt:vendor/firmware/goodixfp.mdt
 vendor/firmware/fpctzappfingerprint.b00
 vendor/firmware/fpctzappfingerprint.b01
 vendor/firmware/fpctzappfingerprint.b02
