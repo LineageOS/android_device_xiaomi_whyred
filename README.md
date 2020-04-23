@@ -1,34 +1,31 @@
-The Xiaomi Redmi Note 6 Pro (codenamed _"tulip"_) is a mid-range smartphone from Xiaomi announced in September 2018.
+The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi announced and released in March 2018.
 
 ## Device specifications
 
-| Device                  | Xiaomi Redmi Note 6 Pro                                     |
-| ----------------------- | :---------------------------------------------------------- |
-| SoC                     | Qualcomm SDM660 Snapdragon 636                              |
-| CPU                     | 8x Qualcomm® Kryo™ 260 CPU                                  |
-| GPU                     | Adreno 509                                                  |
-| Memory                  | 4GB / 6GB RAM (LPDDR4X)                                     |
-| Shipped Android version | 8.1.0                                                       |
-| Storage                 | 64GB eMMC 5.1 flash storage                                 |
-| MicroSD                 | Up to 256 GB                                                |
-| Battery                 | Non-removable Li-Po 4000 mAh                                |
-| Dimensions              | 157.9 x 76.4 x 8.3 mm                                       |
-| Display                 | 2280 x 1080 (19:9), 6.26 inch                               |
-| Rear camera 1           | 12 MP, f/1.9, 1/2.55", 1.4µm, dual pixel PDAF               |
-| Rear camera 2           | 5 MP, f/2.2, 1.12µm, depth sensor                           |
-| Front camera 1          | 20 MP, f/2.0, 0.9µm                                         |
-| Front camera 2          | 2 MP, f/2.2, 1.75µm, depth sensor                           |
-
+| Device                  | Xiaomi Redmi Note 5 Pro                                      |
+| ----------------------- | :----------------------------------------------------------- |
+| SoC                     | Qualcomm SDM660 Snapdragon 636                               |
+| CPU                     | 8x Qualcomm® Kryo™ 260 up to 1.8GHz                          |
+| GPU                     | Adreno 509                                                   |
+| Memory                  | 4GB / 6GM RAM (LPDDR4X)                                      |
+| Shipped Android version | 8.1.0                                                        |
+| Storage                 | 64GB eMMC 5.1 flash storage                                  |
+| Battery                 | Non-removable Li-Po 4000 mAh                                 |
+| Dimensions              | 158.6 x 75.4 x 8.05 mm                                       |
+| Display                 | 2160 x 1080 (18:9), 5.99 inch                                |
+| Rear camera 1           | 12MP, 1.25-micron pixels, f/2.2 Dual LED flash               |
+| Rear camera 2           | 5MP, 1.12-micron pixels, f/2.0                               |
+| Front camera            | 20MP, 1-micron pixels, f/2.2 1080p 30 fps video, Selfie-light|
 
 ## Device picture
 
-![Xiaomi Redmi Note 6 Pro](https://img.timesnownews.com/story/1544521578-Xiaomi_Redmi_Note_6_Pro_colours.jpg)
+![Xiaomi Redmi Note 5 Pro](https://www1-lw.xda-cdn.com/files/2018/02/Xiaomi-Redmi-Note-5-and-Redmi-Note-5-Pro-Forums-now-Open.png)
 
 ## Copyright
 
 ```
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
