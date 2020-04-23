@@ -24,7 +24,7 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
-DEVICE_PATH := device/xiaomi/twolip
+DEVICE_PATH := device/xiaomi/whyred
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -73,4 +73,4 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/twolip/twolip-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/whyred/whyred-vendor.mk)
