@@ -14,7 +14,6 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
-vendor/lib/libMiWatermark.so
 vendor/lib/libSNPE.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so
@@ -594,6 +593,10 @@ vendor/firmware/cpp_firmware_v1_12_0.fw
 # Camera OIS
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
+
+# Camera watermark - from jasmine V11.0.8.0.QDIMIXM
+vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
+vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
 # Consumerir
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
