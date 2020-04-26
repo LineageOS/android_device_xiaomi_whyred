@@ -26,6 +26,7 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <mixer>
     <!-- These are the initial mixer settings -->
+    <ctl name="EAR_S" value="ZERO" />
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="-1" />
     <ctl name="Voice Rx Device Mute" id="2" value="20" />
@@ -279,7 +280,7 @@
     <!-- Incall Recording End -->
 
     <!-- Incall Music -->
-<!-- HTH-32892 ADD by duanlongfei for MIUI SOS feature at 20180919 start -->
+<!-- HTH-32892 HTH-32895 ADD by duanlongfei for MIUI SOS feature at 20180919 start -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
@@ -364,7 +365,7 @@
     <ctl name="COMP2 Switch" value="1" />
 
     <!-- config adc1 tangshouxing 08/24  -->
-    <ctl name="ADC1_INP1 Switch" value="0" />
+    <ctl name="ADC1_INP1 Switch" value="1" />
 
     <!-- MUX controls -->
     <ctl name="DEC1 MUX" value="ZERO" />
@@ -428,9 +429,6 @@
     <ctl name="IIR1 INP4 Volume" value="53" />
     <ctl name="IIR1 INP1 MUX" value="ZERO" />
 
-    <!-- smart PA TAS2557 -->
-    <ctl name="Program" value="0" />
-    <ctl name="Configuration" value="0" />
     <!-- anc related -->
 
     <!-- vbat related data -->
@@ -566,6 +564,12 @@
         <path name="low-latency-playback bt-sco" />
     </path>
 
+    <!-- lct add for whatsapp call ring -->    
+    <path name="low-latency-playback speaker-and-bt-sco-wb"> 
+	 <path name="low-latency-playback bt-sco-wb" /> 
+	 <path name="low-latency-playback speaker" /> 
+    </path> 
+    
     <path name="low-latency-playback speaker-and-hdmi">
         <path name="low-latency-playback hdmi" />
         <path name="low-latency-playback speaker" />
@@ -1832,6 +1836,22 @@
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
+    <path name="va-enroll-mic">
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="ADC3 Volume" value="6" />
+    </path>
+
+    <path name="asr-mic">
+        <ctl name="INT3_MI2S_TX Channels" value="Two" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+        <ctl name="DEC2 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC3 Volume" value="6" />
+    </path>
+
     <!-- DMIC numbered from 1 to 4 -->
     <path name="dmic1">
         <ctl name="DEC1 MUX" value="DMIC1" />
@@ -1851,7 +1871,6 @@
 
     <path name="speaker">
         <!-- ctl name="PowerCtrl" value="1" /-->
-        <ctl name="Configuration" value="0" />
     </path>
 
     <path name="speaker-mono">
@@ -1875,7 +1894,7 @@
         <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
         <ctl name="SpkrRight WSA PA Mute" value="0" />
     </path>
-<!-- HTH-32892 ADD by duanlongfei for MIUI SOS feature at 20180919 start -->
+<!-- HTH-32892 HTH-32895 ADD by duanlongfei for MIUI SOS feature at 20180919 start -->
     <path name="incall_music_uplink">
         <ctl name="Incall_Music Audio Mixer MultiMedia2" value="1" />
     </path>
@@ -2044,7 +2063,7 @@
     <path name="speaker-protected">
         <ctl name="AIF1_VI_SDW Mixer SPKR_VI_1" value="1" />
         <ctl name="AIF1_VI_SDW Mixer SPKR_VI_2" value="1" />
-        <!--path name="speaker" /-->
+        <path name="speaker" />
         <ctl name="VI_FEED_TX Channels" value="Two" />
         <ctl name="INT4_MI2S_RX_VI_FB_STEREO_CH_MUX" value="INT5_MI2S_TX" />
     </path>
@@ -2054,7 +2073,6 @@
         <path name="speaker-mono" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="INT5_MI2S_TX" />
-        <ctl name="Configuration" value="1" />
     </path>
 
     <path name="voice-speaker-2-protected">
@@ -2063,7 +2081,6 @@
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="INT5_MI2S_TX" />
         <ctl name="INT5 MI2S VI MONO" value="Right" />
-        <ctl name="Configuration" value="1" />
     </path>
 
     <path name="vi-feedback">
@@ -2184,7 +2201,6 @@
 
     <path name="voice-handset">
         <path name="handset" />
-        <!--ctl name="Configuration" value="0" /-->
     </path>
 
     <path name="voice-handset-tmus">
@@ -2192,19 +2208,16 @@
     </path>
 
     <path name="voice-speaker">
-        <!--ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" /-->
-        <!--path name="speaker" /-->
-        <ctl name="Configuration" value="1" />
+	<!--ctl name="VOC_EXT_EC MUX" value="PRI_MI2S_TX" /-->
+        <path name="speaker" />
     </path>
 
     <path name="voice-speaker-2">
         <path name="speaker-mono-2" />
-    <ctl name="Configuration" value="1" />
     </path>
 
     <path name="voice-speaker-fluid">
         <path name="speaker-fluid" />
-    <ctl name="Configuration" value="1" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -2213,19 +2226,16 @@
 
     <path name="voice-speaker-vbat">
         <path name="speaker-vbat-mono" />
-    <ctl name="Configuration" value="1" />
     </path>
 
     <path name="voice-speaker-2-vbat">
         <path name="speaker-vbat-mono-2" />
-    <ctl name="Configuration" value="1" />
     </path>
 
     <path name="voice-headphones">
         <path name="headphones" />
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="RX2 Digital Volume" value="84" />
-        <ctl name="Configuration" value="0" />
     </path>
 
     <path name="voice-line">
@@ -2236,11 +2246,14 @@
         <path name="headphones" />
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="RX2 Digital Volume" value="84" />
-        <ctl name="Configuration" value="0" />
     </path>
 
     <path name="voice-headset-mic">
         <path name="headset-mic" />
+    </path>
+
+    <path name="voice-headset">
+        <path name="headphones" />
     </path>
 
     <path name="speaker-and-headphones">
@@ -2257,9 +2270,10 @@
         <path name="headphones-ce" />
         <path name="speaker" />
     </path>
+
     <path name="speaker-and-headphones-no-ce">
-    <path name="headphones-no-ce" />
-    <path name="speaker" />
+        <path name="headphones-no-ce" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-and-line">
@@ -2376,7 +2390,7 @@
         <path name="adc1" />
         <ctl name="ADC3 Volume" value="6" />
         <ctl name="DEC2 MUX" value="ADC2" />
-		<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
 
@@ -2384,7 +2398,7 @@
         <path name="adc1" />
         <ctl name="ADC3 Volume" value="6" />
         <ctl name="DEC2 MUX" value="ADC2" />
-		<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
 
