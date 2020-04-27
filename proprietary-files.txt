@@ -697,5 +697,5 @@ vendor/lib64/libthermalfeature.so
 # VNDK
 vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
 
-# Wifi
-vendor/bin/cnss-daemon
+# Wifi - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345
