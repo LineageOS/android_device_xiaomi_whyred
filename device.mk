@@ -26,6 +26,9 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/twolip
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
