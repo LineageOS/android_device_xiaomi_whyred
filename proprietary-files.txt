@@ -13,7 +13,7 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera - from tulip V10.3.6.0.PEKMIXM
-vendor/lib/hw/camera.sdm660.so|cb24777824ebeb676dc20b9659c00baf5e566a61
+vendor/lib/hw/camera.sdm660.so|78b9c0db7f8372dec2e5b3713d7ad45e6f35e109
 vendor/lib/libSNPE.so|66f23aae6d30b09121f06635c749d6ae47543359
 vendor/lib/libVDClearShot.so|fe429e3ddac8f989d2c754b6a3da36ebe8b85060
 vendor/lib/libVDSuperPhotoAPI.so|913cf65475d0329b321c912d24c98abc428d5e55
