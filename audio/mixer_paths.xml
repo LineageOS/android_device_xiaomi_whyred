@@ -2568,7 +2568,15 @@
     </path>
 
     <path name="unprocessed-stereo-mic">
-        <path name="handset-dmic-endfire" />
+        <path name="voice-rec-dmic-ef" />
+    </path>
+
+    <path name="unprocessed-quad-mic">
+        <path name="quad-mic" />
+    </path>
+
+    <path name="unprocessed-headset-mic">
+        <path name="headset-mic" />
     </path>
 
     <!-- Added for ADSP testfwk -->
