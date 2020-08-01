@@ -55,5 +55,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
+TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
+
 # Inherit the proprietary files
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
