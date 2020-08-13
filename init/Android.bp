@@ -20,6 +20,10 @@ cc_library_static {
     srcs: [
         "init.cpp"
     ],
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init"
+    ],
     whole_static_libs: [
         "libinit_sdm660_common"
     ]

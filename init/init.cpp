@@ -14,9 +14,70 @@
  * limitations under the License.
  */
 
+#include <cstdlib>
+#include <cstring>
+#include <sys/sysinfo.h>
+#include <vector>
+
+#include <android-base/properties.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
+
 #include "init_common.h"
 #include "vendor_init.h"
 
+using android::base::GetProperty;
+
+std::vector<std::string> ro_props_default_source_order = {
+    "",
+    "odm.",
+    "product.",
+    "system.",
+    "vendor.",
+};
+
+void property_override(char const prop[], char const value[], bool add = true) {
+    prop_info *pi;
+
+    pi = (prop_info *)__system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else if (add)
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void set_ro_build_prop(const std::string &source, const std::string &prop,
+        const std::string &value, bool product = false) {
+    std::string prop_name;
+
+    if (product) {
+        prop_name = "ro.product." + source + prop;
+    } else {
+        prop_name = "ro." + source + "build." + prop;
+    }
+
+    property_override(prop_name.c_str(), value.c_str(), false);
+}
+
+void set_device_props(const std::string model) {
+    for (const auto &source : ro_props_default_source_order) {
+        set_ro_build_prop(source, "model", model, true);
+    }
+
+    property_override("persist.vendor.camera.exif.model", model.c_str());
+}
+
+void load_device_properties() {
+    std::string region = GetProperty("ro.boot.hwc", "");
+
+    if (region == "India") {
+        set_device_props("Redmi Note 5 Pro");
+    } else {
+        set_device_props("Redmi Note 5");
+    }
+}
+
 void vendor_load_properties() {
     load_common_properties();
+    load_device_properties();
 }
