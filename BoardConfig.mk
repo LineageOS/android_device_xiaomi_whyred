@@ -40,6 +40,10 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
+TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
+
 # Kernel
 TARGET_KERNEL_CONFIG := whyred_defconfig
 
