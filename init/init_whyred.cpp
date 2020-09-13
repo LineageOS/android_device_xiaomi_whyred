@@ -41,15 +41,22 @@
 #include "property_service.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
+using std::string;
 using android::base::ReadFileToString;
 using android::base::Trim;
 
-char const *heapstartsize;
-char const *heapgrowthlimit;
-char const *heapsize;
-char const *heapminfree;
-char const *heapmaxfree;
+string heapstartsize, heapgrowthlimit, heapsize,
+       heapminfree, heapmaxfree, heaptargetutilization;
+
+void property_override(string prop, string value)
+{
+    auto pi = (prop_info*) __system_property_find(prop.c_str());
+
+    if (pi != nullptr)
+        __system_property_update(pi, value.c_str(), value.size());
+    else
+        __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
+}
 
 void property_override(char const prop[], char const value[])
 {
