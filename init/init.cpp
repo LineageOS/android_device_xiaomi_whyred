@@ -36,16 +36,6 @@ std::vector<std::string> ro_props_default_source_order = {
     "vendor.",
 };
 
-void property_override(char const prop[], char const value[], bool add = true) {
-    prop_info *pi;
-
-    pi = (prop_info *)__system_property_find(prop);
-    if (pi)
-        __system_property_update(pi, value, strlen(value));
-    else if (add)
-        __system_property_add(prop, strlen(prop), value, strlen(value));
-}
-
 void set_ro_build_prop(const std::string &source, const std::string &prop,
         const std::string &value, bool product = false) {
     std::string prop_name;
