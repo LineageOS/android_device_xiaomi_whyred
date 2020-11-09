@@ -34,6 +34,7 @@ std::vector<std::string> ro_props_default_source_order = {
     "product.",
     "system.",
     "vendor.",
+    "system_ext.",
 };
 
 void set_ro_build_prop(const std::string &source, const std::string &prop,
