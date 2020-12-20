@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "15b4d740_ba908344",
+        "filename": "init/init_whyred.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2020-12-20T20:02:25Z",
+      "side": 1,
+      "message": "Aren\u0027t we always expecting the device to be whyred?",
+      "range": {
+        "startLine": 75,
+        "startChar": 3,
+        "endLine": 75,
+        "endChar": 51
+      },
+      "revId": "57fe713801169778fb380b8704049821ab8bccb9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
