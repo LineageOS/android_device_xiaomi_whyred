@@ -24,7 +24,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ov13855_sunny.low.lux=385 \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
     persist.vendor.s5k3l8_ofilm.low.lux=379
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera
