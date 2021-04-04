@@ -36,6 +36,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := whyred
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
+    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 V12.0.2.0.PEIMIXM release-keys"
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+BUILD_FINGERPRINT := xiaomi/whyred/whyred:9/PKQ1.180904.001/V12.0.2.0.PEIMIXM:user/release-keys
