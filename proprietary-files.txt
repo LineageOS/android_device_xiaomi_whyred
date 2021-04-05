@@ -18,7 +18,7 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera - from V10.3.5.0.PEICNXM
-vendor/lib/hw/camera.sdm660.so|b372596587eb0552e0f75a073b542a31f1ab0cd1
+vendor/lib/hw/camera.sdm660.so|6f707df2ad6d1483c0a27afaab97e1b578400afd|b372596587eb0552e0f75a073b542a31f1ab0cd1
 vendor/lib/libSonyIMX376C3RmscLibrary.so|b3138daf9b93c645b89b67d28c3f6fadfbbfdb42
 vendor/lib/libSonyIMX376KRmscLibrary.so|2f7792d51bf476352590b8643e43762f68cadeef
 vendor/lib/libXMFD_AgeGender.so|8fd7c01de2f6c58749fcc333114b5622a2c2152b
