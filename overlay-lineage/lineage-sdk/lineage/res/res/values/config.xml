@@ -14,4 +14,6 @@
 <resources>
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <bool name="config_defaultCABC">false</bool>
 </resources>
