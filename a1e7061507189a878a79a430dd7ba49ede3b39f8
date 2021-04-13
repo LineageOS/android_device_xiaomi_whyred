@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30a76ad0_87c55337",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 19955
+      },
+      "writtenOn": "2021-04-13T21:55:34Z",
+      "side": 1,
+      "message": "We could take advantage of and add the 3GB variant to be in line with the information from the lineage wiki",
+      "revId": "a1e7061507189a878a79a430dd7ba49ede3b39f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
