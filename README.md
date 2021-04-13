@@ -7,7 +7,7 @@ The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones f
 | SoC                     | Qualcomm SDM660 Snapdragon 636                               |
 | CPU                     | 8x Qualcomm® Kryo™ 260 up to 1.8GHz                          |
 | GPU                     | Adreno 509                                                   |
-| Memory                  | 4GB / 6GM RAM (LPDDR4X)                                      |
+| Memory                  | 4GB / 6GB RAM (LPDDR4X)                                      |
 | Shipped Android version | 8.1.0                                                        |
 | Storage                 | 64GB eMMC 5.1 flash storage                                  |
 | Battery                 | Non-removable Li-Po 4000 mAh                                 |
