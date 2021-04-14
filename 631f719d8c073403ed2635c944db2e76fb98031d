@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e3a2aa6_4e353957",
+        "filename": "overlay-lineage/lineage-sdk/lineage/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-04-14T11:05:41Z",
+      "side": 1,
+      "message": "typo\nCorrect comment from lineage-sdk:\n\u003c!-- Should we filter any display modes which are unmapped? --\u003e",
+      "range": {
+        "startLine": 31,
+        "startChar": 54,
+        "endLine": 31,
+        "endChar": 62
+      },
+      "revId": "631f719d8c073403ed2635c944db2e76fb98031d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
