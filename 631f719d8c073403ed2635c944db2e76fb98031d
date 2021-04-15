@@ -22,6 +22,30 @@
       "revId": "631f719d8c073403ed2635c944db2e76fb98031d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a9facb2b_e820b4af",
+        "filename": "overlay-lineage/lineage-sdk/lineage/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 19936
+      },
+      "writtenOn": "2021-04-15T10:13:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6e3a2aa6_4e353957",
+      "range": {
+        "startLine": 31,
+        "startChar": 54,
+        "endLine": 31,
+        "endChar": 62
+      },
+      "revId": "631f719d8c073403ed2635c944db2e76fb98031d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
