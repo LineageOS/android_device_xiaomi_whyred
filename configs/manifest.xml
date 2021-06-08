@@ -2,41 +2,21 @@
     <hal format="hidl">
         <name>android.hardware.ir</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConsumerIr</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IConsumerIr/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <version>3.0</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@3.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.goodix.hardware.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGoodixBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::IGoodixBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.cryptfshw</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICryptfsHw</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.0::ICryptfsHw/default</fqname>
     </hal>
 </manifest>
