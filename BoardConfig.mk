@@ -9,9 +9,6 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/whyred
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := whyred
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
