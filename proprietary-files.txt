@@ -634,9 +634,6 @@ vendor/lib/libois_lc898122.so
 vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
-# Consumerir
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
-
 # Display calibration
 vendor/etc/qdcm_calib_data_huaxing_nt36672_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_td4310_fhd_video_mode_dsi_panel.xml
