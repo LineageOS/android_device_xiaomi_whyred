@@ -20,7 +20,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := whyred_defconfig
+TARGET_KERNEL_CONFIG += xiaomi/whyred.config
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
