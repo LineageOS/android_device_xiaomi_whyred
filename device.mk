@@ -17,13 +17,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
-# Consumerir
-BOARD_HAVE_IR := true
+# Camera
+PRODUCT_PACKAGES += \
+    libcamera_sdm660_shim
 
 # FM
 BOARD_HAVE_QCOM_FM := true
 
-# Gatekeeper HAL
+# Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
@@ -31,6 +32,9 @@ PRODUCT_PACKAGES += \
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
+# IR
+BOARD_HAVE_IR := true
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -42,14 +46,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Ramdisk
+# Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
-
-# Shims
-PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
 
 # USB
 PRODUCT_PACKAGES += \
