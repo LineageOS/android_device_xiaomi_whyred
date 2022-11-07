@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f10b8f_3c891e05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20069
+      },
+      "writtenOn": "2022-11-07T15:03:06Z",
+      "side": 1,
+      "message": "This looks identical to 338439, but is the earliest proposed one...",
+      "revId": "b2184dfdf90b63aafa175063cd33ce7c2d304903",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
