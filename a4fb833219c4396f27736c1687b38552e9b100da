@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92048c2e_593dfdad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20069
+      },
+      "writtenOn": "2023-02-04T14:02:36Z",
+      "side": 1,
+      "message": "Looks like some EOL / whitespace changes sneaked in, not sure it is really a problem, though...",
+      "revId": "a4fb833219c4396f27736c1687b38552e9b100da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
